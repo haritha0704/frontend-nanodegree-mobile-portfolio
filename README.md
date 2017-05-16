@@ -3,11 +3,9 @@ The goal was to optimize a given website so that each page reaches a page speed 
 
 To get started, check out the repository and inspect the code.
 
-### Getting started
+### Part 1: Optimize PageSpeed Insights score for index.html
 
-#### Part 1: Optimize PageSpeed Insights score for index.html
-
-####Optimizations made :
+#### Optimizations made :
 
 index.html
 
@@ -20,7 +18,7 @@ index.html
   * Use Web Font Loader to load the Google web fonts asynchronously
   * Placed scripts before tag closing </body> tag.
 
-Result: The Google PageSpeed Insight Score for the mobile version of index.html changed to 91/100 and desktop version to 93/100.
+### Result: The Google PageSpeed Insight Score for the mobile version of index.html changed to 91/100 and desktop version to 93/100.
 
 
 Some useful tips to help you get started:
