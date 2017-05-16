@@ -7,7 +7,8 @@ To get started, check out the repository and inspect the code.
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
-##Optimizations:##
+##Optimizations:
+
 index.html
 
   * Make google-analytics script async
