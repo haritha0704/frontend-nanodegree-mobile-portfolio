@@ -3,6 +3,24 @@ The goal was to optimize a given website so that each page reaches a page speed 
 
 To get started, check out the repository and inspect the code.
 
+### Getting Started instructions
+1. Check out the repository
+2. Run a local server through command line
+
+ $> cd /path/to/root-project-folder/dist
+ $> python -m SimpleHTTPServer 8080
+
+3. Open a browser and visit localhost:8080
+4. Download and install ngrok in the root of the project to make the local server accessible remotely.
+
+   $> cd /path/to/root-project-folder/dist
+   $> ngrok 8080
+   
+5. Copy the forwarded public URL ngrok provides and run it through PageSpeed Insights.
+6. For testing the results for part 2  optimizations run the pizza.html in a browser.And check the timeline tab to record the
+   events.Check the console to see the time taken to resize the pizza as well as frames per second.
+
+
 ### Part 1: Optimize PageSpeed Insights score for index.html
 
 #### Optimizations made :
@@ -19,29 +37,6 @@ index.html
   * Placed scripts before tag closing </body> tag.
 
 #### Result: The Google PageSpeed Insight Score for the mobile version of index.html changed to 91/100 and desktop version to 93/100.
-
-
-Some useful tips to help you get started:
-
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
-
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
-
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
-
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
